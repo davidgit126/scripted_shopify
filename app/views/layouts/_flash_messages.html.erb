@@ -6,12 +6,9 @@
     <% if flash[:notice] %>
       ShopifyApp.flashNotice("<%= j flash[:notice].html_safe %>");
     <% end %>
-<<<<<<< HEAD
       <% if flash[:error] %>
-=======
-
+      <% end %>
     <% if flash[:error] %>
->>>>>>> f4cf8b185269cbd4c996fc35b7fdb2c7d88f5329
       ShopifyApp.flashError("<%= j flash[:error].html_safe %>");
     <% end %>
   });

@@ -79,7 +79,6 @@ test:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
 production:
-<<<<<<< HEAD
    <<: *default
    #username: admin
    #password: 93126
@@ -87,9 +86,3 @@ production:
    database: scripted-shopify2_production
    username: scripted-shopify2
    password: <%= ENV['SCRIPTED-SHOPIFY2_DATABASE_PASSWORD'] %>
-=======
-  <<: *default
-  database: scripted-shopify2_production
-  username: scripted-shopify2
-  password: <%= ENV['SCRIPTED-SHOPIFY2_DATABASE_PASSWORD'] %>
->>>>>>> f4cf8b185269cbd4c996fc35b7fdb2c7d88f5329

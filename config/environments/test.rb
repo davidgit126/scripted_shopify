@@ -30,6 +30,10 @@ Rails.application.configure do
   # The :test delivery method accumulates sent emails in the
   # ActionMailer::Base.deliveries array.
   config.action_mailer.delivery_method = :test
+<<<<<<< HEAD
+=======
+
+>>>>>>> f4cf8b185269cbd4c996fc35b7fdb2c7d88f5329
   # Randomize the order test cases are executed.
   config.active_support.test_order = :random
 

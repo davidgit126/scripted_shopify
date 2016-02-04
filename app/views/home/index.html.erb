@@ -9,6 +9,7 @@
   </script>
 <% end %>
 
+<<<<<<< HEAD
 <!--<h2>Products</h2>-->
 
 <!--<ul>-->
@@ -703,3 +704,12 @@
 </body>
 </html>
 
+=======
+<h2>Products</h2>
+
+<ul>
+  <% @products.each do |product| %>
+    <li><%= link_to product.title, "https://#{@shop_session.url}/admin/products/#{product.id}", target: "_top" %></li>
+  <% end %>
+</ul>
+>>>>>>> f4cf8b185269cbd4c996fc35b7fdb2c7d88f5329

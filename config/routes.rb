@@ -1,10 +1,15 @@
 Rails.application.routes.draw do
   
+  resources :jobs
   controller :sessions do
     get 'login' => :new, :as => :login
     post 'login' => :create, :as => :authenticate
     get 'auth/shopify/callback' => :callback
     get 'logout' => :destroy, :as => :logout
+  end
+
+  controller :home do
+    post 'authenticate'
   end
 
   root :to => 'home#index'

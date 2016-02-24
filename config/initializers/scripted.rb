@@ -5,32 +5,32 @@ ShopifyApp.configure do |config|
 end
 # # First, find a JobTemplate that you'd like to use:
 #
-#   templates = ScriptedClient::JobTemplate.all
-#   blog_post = templates.find { |template| template.name == 'Standard Blog Post' }
-#
-# # Next, assign some values for the Prompts on that JobTemplate.
-#
-#   key_points = blog_post.prompts.find { |prompt| prompt.label == 'Key Points' }
-#   key_points.value = ['Orangutans make great pets', 'Normal pets are lame']
-#
-# # Next, you can find an Industry:
-#
-#   industries = ScriptedClient::Industry.all
-#   lifestyle = industries.find { |industry| industry.name == 'Lifestyle & Travel' }
-#
-# # Now you can create the Job!
-#
-#   job = ScriptedClient::Job.new(
-#       topic: 'Top 10 Reasons to Buy an Orangutan',
-#       job_template: blog_post,
-#       industries: [lifestyle]
-#   )
-#   job.save
-#
-#   ScriptedClient::Job.all
-#   ScriptedClient::Job.draft_ready
-#
-#   ScriptedClient::Job.find('5ceb8bb8235bcc76bf475e21')
-#
-#   ScriptedClient::Job.find('5ceb8bb8235bcc76bf475e21').html_contents
+#    templates = ScriptedClient::JobTemplate.all
+#    blog_post = templates.find { |template| template.name == 'Standard Blog Post' }
+# #
+# # # Next, assign some values for the Prompts on that JobTemplate.
+# #
+#    key_points = blog_post.prompts.find { |prompt| prompt.label == 'Key Points' }
+#    key_points.value = ['Orangutans make great pets', 'Normal pets are lame']
+# #
+# # # Next, you can find an Industry:
+# #
+#    industries = ScriptedClient::Industry.all
+#    lifestyle = industries.find { |industry| industry.name == 'Lifestyle & Travel' }
+# #
+# # # Now you can create the Job!
+# #
+#    job = ScriptedClient::Job.new(
+#        topic: 'Top 10 Reasons to Buy an Orangutan',
+#        job_template: blog_post,
+#        industries: [lifestyle]
+#    )
+#    job.save
+# #
+#    ScriptedClient::Job.all
+#    ScriptedClient::Job.draft_ready
+# #
+#    ScriptedClient::Job.find('5ceb8bb8235bcc76bf475e21')
+# #
+#    ScriptedClient::Job.find('5ceb8bb8235bcc76bf475e21').html_contents
 # end

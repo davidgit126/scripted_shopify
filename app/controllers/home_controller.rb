@@ -18,8 +18,8 @@ class HomeController < AuthenticatedController
       response = http.request request
       # puts '----response----------'
       # puts response
-      # parsed = JSON.parse(response.body)
-      #parsed = JSON.parse([response.body].to_json)
+      parsed = JSON.parse(response.body)
+      parsed = JSON.parse([response.body].to_json)
 
       ScriptedClient.organization_key = key
       ScriptedClient.access_token = token

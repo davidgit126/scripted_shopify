@@ -24,6 +24,8 @@ default: &default
 development:
   <<: *default
   database: scripted-shopify2_development
+#  username: com
+#  password: 93126
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
@@ -80,9 +82,9 @@ test:
 #
 production:
    <<: *default
-   #username: admin
-   #password: 93126
-   #host: localhost
+#   username: com
+#   password: 93126
+#   host: localhost
    database: scripted-shopify2_production
    username: scripted-shopify2
    password: <%= ENV['SCRIPTED-SHOPIFY2_DATABASE_PASSWORD'] %>

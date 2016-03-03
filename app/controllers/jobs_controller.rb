@@ -12,7 +12,6 @@ class JobsController < ApplicationController
   # GET /jobs/1.json
   def show
     @job = Job.find(params[:id])
-    @job = Job.find(params[:id]).html_contents;
   end
 
   # GET /jobs/new
@@ -57,6 +56,9 @@ class JobsController < ApplicationController
 
 # Now you can create the Job!
 
+    @job = ScriptedClient::Job.all
+    @job.count = 1
+
     job = ScriptedClient::Job.new(
         topic: 'Top 10 Reasons to Buy an Orangutan',
         job_template: blog_post,
@@ -97,6 +99,7 @@ class JobsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def job_params
-      params[:job]
+      params.require(:job).permit(:api_key, :api_token)
+      # params.job_params[:job]
     end
 end
